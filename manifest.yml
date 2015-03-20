@@ -3,12 +3,15 @@ instances: 1
 memory: 128M
 buildpack: https://github.com/cupenya/bluemix-buildpack-meteor.git
 declared-services:
-  sample-java-cloudant-cloudantNoSQLDB:
-    label: cloudantNoSQLDB
-    plan: Shared
+  cpy-bluemix-demo2-mongodb:
+    label: mongolab
+    plan: sandbox
+  cpy-bluemix-demo2-insights:
+    label: cpy-insights
+    plan: sandbox
 applications:
-- name: cpy-bluemix-demo
-  host: cpy-bluemix-demo
+- name: cpy-bluemix-demo2
+  host: cpy-bluemix-demo2
   env:
     METEOR_SETTINGS: '{
                         "public": {
