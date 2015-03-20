@@ -1,0 +1,12 @@
+{
+  "public": {
+    "defaultScreen": "order-entry"
+  },
+  "insights": {
+    "engine": {
+      "endpoint": "http://localhost:8899",
+      "apiKey": "api-blue",
+      "deploymentId": "8e25b271-911d-427a-af71-1523004688d1"
+    }
+  }
+}

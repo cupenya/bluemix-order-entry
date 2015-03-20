@@ -1,0 +1,28 @@
+template(name="orderList")
+  .row.page-stream
+    .col-md-12
+      table.table.table-bordered.table-hover
+        thead
+          tr
+            td ID
+            td Date
+            td Amount
+            td Party Name
+            td Account Type
+            td Actions
+        tbody
+          each orders
+            tr
+              td(title="{{ _id }}") {{ invoiceId }}
+              td {{ invoiceDate }}
+              td {{ amountDueOriginal }}
+              td {{ partyName }}
+              td {{ accountType }}
+              td
+                unless _closed
+                  input.btn.btn-primary.btn-xs#close(type="button", value="Close")
+                unless _closed
+                  input.btn.btn-default.btn-xs#matchedManually(type="button", value="Matched Manually")
+                if _disputeOpen
+                  input.btn.btn-success.btn-xs#closeDispute(type="button", value="Dispute Resolved")
+

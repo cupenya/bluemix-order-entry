@@ -1,0 +1,19 @@
+# Meteor packages used by this project, one per line.
+#
+# 'meteor add' and 'meteor remove' will edit this file for you,
+# but you can also edit it by hand.
+
+standard-app-packages
+insecure
+mquandalle:jade
+less
+coffeescript
+iron:router
+mizzao:user-status
+gadicohen:headers
+copleykj:livestamp
+u2622:persistent-session
+cfs:http-methods
+sacha:spin
+nemo64:bootstrap
+http

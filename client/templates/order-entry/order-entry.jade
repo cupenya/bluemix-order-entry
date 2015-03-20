@@ -1,0 +1,71 @@
+template(name="orderEntry")
+  if lastInvoiceId
+    .row
+      .col-md-12
+        .alert.alert-success
+          p Order with ID <strong>{{ lastInvoiceId }}</strong> created.
+          p <small>Hint: Create an order with more than <i>1000 $</i> or a <i>Key Account</i> to see something different.</small>
+
+  .row
+    form(class="new-order")
+      .panel.panel-default
+        .panel-heading
+          h3.panel-title Order Information for SAP
+        .panel-body
+          .col-md-6
+            .form-group
+              label(for="invoiceId") Invoice ID
+              input#invoiceId.form-control(type="text", value="{{ currentOrder.invoiceId }}")
+            .form-group
+              label(for="invoiceDate") Invoice Date
+              input#invoiceDate.form-control(type="text", value="{{ currentOrder.invoiceDate }}")
+          .col-md-6
+            .form-group
+              label(for="amountDueOriginal") Invoice Amount ($)
+              input#amountDueOriginal.form-control(type="text", value="{{ currentOrder.amountDueOriginal }}")
+            .form-group
+              label(for="accountType") Account Type
+              select#accountType.form-control
+                option(value = "Small Account", selected="{{ selectedIfEquals 'Small Account' currentOrder.accountType }}") Small Account
+                option(value = "Medium Account", selected="{{ selectedIfEquals 'Medium Account' currentOrder.accountType }}") Medium Account
+                option(value = "Large Account", selected="{{ selectedIfEquals 'Large Account' currentOrder.accountType }}") Large Account
+                option(value = "Key Account", selected="{{ selectedIfEquals 'Key Account' currentOrder.accountType }}") Key Account
+                option(value = "Consumer Account", selected="{{ selectedIfEquals 'Consumer Account' currentOrder.accountType }}") Consumer Account
+            button.btn.btn-primary(type="submit", disabled=creatingOrder) Create Order
+      .panel.panel-default
+        .panel-heading
+          h3.panel-title Order Details
+        .panel-body
+          .col-md-6
+            .form-group
+              label(for="partyName") Party Name
+              input#partyName.form-control(type="text", value="{{ currentOrder.partyName }}")
+            .form-group
+              label(for="accountNumber") Account Number
+              input#accountNumber.form-control(type="text", value="{{ currentOrder.accountNumber }}")
+            .form-group
+              label(for="lineOfBusiness") Line of Business
+              input#lineOfBusiness.form-control(type="text", value="{{ currentOrder.lineOfBusiness }}")
+          .col-md-6
+            .form-group
+              label(for="product1") Product 1
+              input#product1.form-control(type="text", value="{{ currentOrder.product1 }}")
+            .form-group
+              label(for="delivery") Delivery
+              input#delivery.form-control(type="text", value="{{ currentOrder.delivery }}")
+            .form-group
+              label(for="sourceName") Department
+              input#sourceName.form-control(type="text", value="{{ currentOrder.sourceName }}")
+
+            .form-group(style="display: none;")
+              label(for="processType") Process Type
+              input#processType.form-control(type="text", value="{{ currentOrder.processType }}")
+            .form-group(style="display: none;")
+              label(for="disputedCase") Disputed
+              input#disputedCase.form-control(type="text", value="{{ currentOrder.disputedCase }}")
+            .form-group(style="display: none;")
+              label(for="disputeStatus") Dispute Status
+              input#disputeStatus.form-control(type="text", value="{{ currentOrder.disputeStatus }}")
+            .form-group(style="display: none;")
+              label(for="disputeReasonCode") Dispute Result
+              input#disputeReasonCode.form-control(type="text", value="{{ currentOrder.disputeReasonCode }}")

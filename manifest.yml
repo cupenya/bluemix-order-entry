@@ -1,0 +1,25 @@
+domain: mybluemix.net
+instances: 1
+memory: 128M
+buildpack: https://github.com/cupenya/bluemix-buildpack-meteor.git
+declared-services:
+  sample-java-cloudant-cloudantNoSQLDB:
+    label: cloudantNoSQLDB
+    plan: Shared
+applications:
+- name: cpy-bluemix-demo
+  host: cpy-bluemix-demo
+  env:
+    METEOR_SETTINGS: '{
+                        "public": {
+                          "defaultScreen": "order-entry"
+                        },
+                        "insights": {
+                          "engine": {
+                            "endpoint": "http://bluemix.cupenya.com/engine-war",
+                            "apiKey": "PLEASE BIND A CUPENYA INSTANCE TO THIS APPLICATION"
+                          }
+                        }
+                      }'
+
+
