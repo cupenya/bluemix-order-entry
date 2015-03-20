@@ -8,7 +8,7 @@ declared-services:
     plan: sandbox
   cpy-bluemix-demo2-insights:
     label: cpy-insights
-    plan: sandbox
+    plan: free
 applications:
 - name: cpy-bluemix-demo2
   services:
