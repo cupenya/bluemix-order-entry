@@ -11,6 +11,9 @@ declared-services:
     plan: sandbox
 applications:
 - name: cpy-bluemix-demo2
+  services:
+    - cpy-bluemix-demo2-mongodb
+    - cpy-bluemix-demo2-insights
   host: cpy-bluemix-demo2
   env:
     METEOR_SETTINGS: '{
