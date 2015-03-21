@@ -1,7 +1,3 @@
-domain: mybluemix.net
-instances: 1
-memory: 128M
-buildpack: https://github.com/cupenya/bluemix-buildpack-meteor.git
 declared-services:
   cpy-bluemix-demo2-mongodb:
     label: mongolab
@@ -11,9 +7,10 @@ declared-services:
     plan: free
 applications:
 - name: cpy-bluemix-demo2
-  services:
-    - cpy-bluemix-demo2-mongodb
-    - cpy-bluemix-demo2-insights
+  domain: mybluemix.net
+  instances: 1
+  memory: 128M
+  buildpack: https://github.com/cupenya/bluemix-buildpack-meteor.git
   host: cpy-bluemix-demo2
   env:
     METEOR_SETTINGS: '{
@@ -27,5 +24,8 @@ applications:
                           }
                         }
                       }'
+  services:
+    - cpy-bluemix-demo2-mongodb
+    - cpy-bluemix-demo2-insights
 
 
