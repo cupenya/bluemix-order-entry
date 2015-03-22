@@ -18,8 +18,7 @@ Meteor.startup ->
     cpy = vcap["cpy-insights"]
     if (cpy)
       console.log "Using Cupenya binding"
-      console.log cpy[0].credentials
-      console.log cpy[0].credentials.apiKey
+      config.insights.engine.endpoint = cpy[0].credentials.endpoint
       config.insights.engine.apiKey = cpy[0].credentials.apiKey
       console.log("Config dump after binding:")
       console.log(config)
@@ -64,6 +63,8 @@ logInsightsEvent = (eventId, eventType, instanceId, context = {}, timestamp = ne
         console.log("Transmitted event #{insightsEvent.id}")
   )
 
+
+Meteor.methods
   createOrder: (order) ->
     insertedOrderId = Orders.insert(order)
 

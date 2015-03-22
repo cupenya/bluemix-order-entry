@@ -1,31 +1,19 @@
 declared-services:
-  cpy-bluemix-demo2-mongodb:
+  cpy-bluemix-demo-mongodb:
     label: mongolab
     plan: sandbox
-  cpy-bluemix-demo2-insights:
+  cpy-bluemix-demo-insights:
     label: cpy-insights
     plan: free
 applications:
-- name: cpy-bluemix-demo2
-  domain: mybluemix.net
+- name: cpy-bluemix-demo
+  domain: eu-gb.mybluemix.net
   instances: 1
   memory: 128M
   buildpack: https://github.com/cupenya/bluemix-buildpack-meteor.git
   host: cpy-bluemix-demo2
-  env:
-    METEOR_SETTINGS: '{
-                        "public": {
-                          "defaultScreen": "order-entry"
-                        },
-                        "insights": {
-                          "engine": {
-                            "endpoint": "http://bluemix.cupenya.com/engine-war",
-                            "apiKey": "PLEASE BIND A CUPENYA INSTANCE TO THIS APPLICATION"
-                          }
-                        }
-                      }'
   services:
-    - cpy-bluemix-demo2-mongodb
-    - cpy-bluemix-demo2-insights
+    - cpy-bluemix-demo-mongodb
+    - cpy-bluemix-demo-insights
 
 
