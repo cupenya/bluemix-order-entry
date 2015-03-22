@@ -7,7 +7,7 @@ declared-services:
     plan: free
 applications:
 - name: cpy-bluemix-demo
-  domain: eu-gb.mybluemix.net
+  domain: mybluemix.net
   instances: 1
   memory: 128M
   buildpack: https://github.com/cupenya/bluemix-buildpack-meteor.git
