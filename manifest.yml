@@ -2,7 +2,7 @@ declared-services:
   cpy-bluemix-demo-mongodb:
     label: mongolab
     plan: sandbox
-  cpy-bluemix-demo-insights:
+  cupenya-insights:
     label: cpy-insights
     plan: free
 applications:
@@ -11,9 +11,9 @@ applications:
   instances: 1
   memory: 128M
   buildpack: https://github.com/cupenya/bluemix-buildpack-meteor.git
-  host: cpy-bluemix-demo2
+  host: cpy-bluemix-demo
+  env:
+    METEOR_SETTINGS: '{"test": "1"}'
   services:
     - cpy-bluemix-demo-mongodb
-    - cpy-bluemix-demo-insights
-
-
+    - cupenya-insights
