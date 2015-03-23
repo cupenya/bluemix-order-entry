@@ -1,9 +1,16 @@
-config = Meteor.settings
-
-
-
 cupenya = @cupenya
 
+
+config = do ->
+  if (Meteor.settings?.insights?)
+    Meteor.settings
+  else
+    public:
+      defaultScreen: "order-entry"
+    insights:
+      engine:
+        endpoint: "TO DEFINE"
+        apiKey: "TO DEFINE"
 
 Meteor.publish "orders", ->
   Orders.find()

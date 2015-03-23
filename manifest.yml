@@ -12,8 +12,6 @@ applications:
   memory: 128M
   buildpack: https://github.com/cupenya/bluemix-buildpack-meteor.git
   host: cpy-bluemix-demo
-  env:
-    METEOR_SETTINGS: '{"test": "1"}'
   services:
     - cpy-bluemix-demo-mongodb
     - cupenya-insights
