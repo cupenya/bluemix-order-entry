@@ -5,7 +5,11 @@ Router.configure
 
 Router.route "/",
   onBeforeAction: ->
-    Router.go(Meteor.settings.public.defaultScreen)
+    if (Meteor.settings?.public?.defaultScreen?)
+      Router.go(Meteor.settings.public.defaultScreen)
+    else
+      Router.go("order-entry")
+
 
 Router.route "/order-entry",
   name: "order-entry"
