@@ -4,7 +4,7 @@ This example application demonstrates how to use the Cupenya Insights API in a B
 
 # Try It for Free in 1 Minute
 
-To simply try it you need a Bluemix account and then you can deploy us with one click, the necessary services, e.g. Cupenya Insights and a database are created on the fly.
+To try it out, you need a Bluemix account and then you can deploy us with one click, the necessary services, e.g. Cupenya Insights and a database are created on the fly.
 
 
 
@@ -17,8 +17,13 @@ Press Log in button and provide your bluemix credentials
 ![Step 1](http://www.cupenya.com/blog/wp-content/uploads/2015/03/step1.png)
 
 ![Step 2](http://www.cupenya.com/blog/wp-content/uploads/2015/03/step2.png)
+Notice: If you are signing in for the first time, you will be asked to create an alias as well.
 
-Select Region, Organization and Space and Deploy your application
+Select:
+- Region: US South
+- Organization: cupenya
+- Space: dev
+Press Deploy
 
 ![Step 3](http://www.cupenya.com/blog/wp-content/uploads/2015/03/step3.png)
 
@@ -31,9 +36,11 @@ Hint: Make it a Key account and over 1000 dollars to have a guaranteed dispute.
 
 ![Step 5](http://www.cupenya.com/blog/wp-content/uploads/2015/03/step5.png)
 
-Return to the Bluemix Dashboard. Scroll down to the “Services” section and click on Cupenya Insights and then click on "open cupenya insights dashboard" then click on "open cupenya insights dashboard"
+Return to the Bluemix Dashboard. Scroll down to the “Services” section and click on Cupenya Insights.
 
 ![Step 6](http://www.cupenya.com/blog/wp-content/uploads/2015/03/step6.png)
+
+Click on "open cupenya insights dashboard"
 
 ![Step 7](http://www.cupenya.com/blog/wp-content/uploads/2015/03/step7.png)
 
@@ -49,9 +56,9 @@ Select connectors tab and Enable the Bluemix Deployment Connector
 
 ![Step 10](http://www.cupenya.com/blog/wp-content/uploads/2015/03/step10.png)
 
-Press assign connector, confirm and press Save.
+Press the button "Assign New Connectors", Confirm and press Save.
 
-Map tasks to the systems that execute them. In this example, enable the Bluemix adaptor and link the appropriate event for:
+Map the process tasks such “Create Invoice” to the underlying system. In this example, enable the Bluemix adaptor and link the appropriate event for:
 - Create Invoice
 - Handle Dispute
 - Manual Matching
@@ -62,7 +69,7 @@ First, click the "Connect System" button.
 
 ![Step 11](http://www.cupenya.com/blog/wp-content/uploads/2015/03/step11.png)
 
-Then assign the Bluemix connector and set the correct Element Event.
+Then assign the Bluemix connector and set the correct Element Event as shown in the image below.
 
 ![Step 12](http://www.cupenya.com/blog/wp-content/uploads/2015/03/step12.png)
 
