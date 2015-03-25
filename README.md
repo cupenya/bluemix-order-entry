@@ -49,9 +49,7 @@ Select connectors tab and Enable the Bluemix Deployment Connector
 
 ![Step 10](http://www.cupenya.com/blog/wp-content/uploads/2015/03/step10.png)
 
-Press assign connector and then confirm
-
-Press Save
+Press assign connector, confirm and press Save.
 
 Map tasks to the systems that execute them. In this example, enable the Bluemix adaptor and link the appropriate event for: 
 - Create Invoice
