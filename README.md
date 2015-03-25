@@ -26,7 +26,7 @@ Press “View Your App” to be redirected to order-entry app
 
 ![Step 4](http://www.cupenya.com/blog/wp-content/uploads/2015/03/step4.png)
 
-Create an order in Bluemix App 
+Create an order in Bluemix App
 Hint: Make it a Key account and over 1000 dollars to have a guaranteed dispute.
 
 ![Step 5](http://www.cupenya.com/blog/wp-content/uploads/2015/03/step5.png)
@@ -51,7 +51,7 @@ Select connectors tab and Enable the Bluemix Deployment Connector
 
 Press assign connector, confirm and press Save.
 
-Map tasks to the systems that execute them. In this example, enable the Bluemix adaptor and link the appropriate event for: 
+Map tasks to the systems that execute them. In this example, enable the Bluemix adaptor and link the appropriate event for:
 - Create Invoice
 - Handle Dispute
 - Manual Matching
@@ -74,7 +74,7 @@ Open cupenya insights monitor to see your order details
 
 ![Step 14](http://www.cupenya.com/blog/wp-content/uploads/2015/03/step14.png)
 
-Open the Order List to take actions to Close, Manually Match or Resolve Dispute for your open invoices
+Open the Order List (e.g. http://bluemix-order-entry-bozhoyo-179.mybluemix.net/order-list) to take actions to Close, Manually Match or Resolve Dispute for your open invoices
 
 ![Step 16](http://www.cupenya.com/blog/wp-content/uploads/2015/03/step16.png)
 
