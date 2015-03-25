@@ -19,11 +19,6 @@ Press Log in button and provide your bluemix credentials
 ![Step 2](http://www.cupenya.com/blog/wp-content/uploads/2015/03/step2.png)
 Notice: If you are signing in for the first time, you will be asked to create an alias as well.
 
-Select:
-- Region: US South
-- Organization: cupenya
-- Space: dev
-
 Press Deploy
 
 ![Step 3](http://www.cupenya.com/blog/wp-content/uploads/2015/03/step3.png)
@@ -86,7 +81,7 @@ Open cupenya insights monitor to see your order details
 
 ![Step 14](http://www.cupenya.com/blog/wp-content/uploads/2015/03/step14.png)
 
-Open the Order List (e.g. `http://bluemix-order-entry-bozhoyo-179.mybluemix.net/order-list`) to take actions to Close, Manually Match or Resolve Dispute for your open invoices
+Open the Order List in your deployed Bluemix application to take actions to Close, Manually Match or Resolve Dispute for your open invoices
 
 ![Step 16](http://www.cupenya.com/blog/wp-content/uploads/2015/03/step16.png)
 
