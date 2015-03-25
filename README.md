@@ -23,6 +23,7 @@ Select:
 - Region: US South
 - Organization: cupenya
 - Space: dev
+
 Press Deploy
 
 ![Step 3](http://www.cupenya.com/blog/wp-content/uploads/2015/03/step3.png)
@@ -60,28 +61,32 @@ Press the button "Assign New Connectors", Confirm and press Save.
 
 Map the process tasks such “Create Invoice” to the underlying system. In this example, enable the Bluemix adaptor and link the appropriate event for:
 - Create Invoice
+- Generate & Send Invoice
+- Waiting for Payment
 - Handle Dispute
-- Manual Matching
-
-If event is missing, make sure it has been previously triggered.
 
 First, click the "Connect System" button.
 
 ![Step 11](http://www.cupenya.com/blog/wp-content/uploads/2015/03/step11.png)
 
-Then assign the Bluemix connector and set the correct Element Event as shown in the image below.
+Then assign the Bluemix connector, set "Complete Event" as Event Mapping and choose the relevant Element Event from the list. An example is shown in the image below.
 
 ![Step 12](http://www.cupenya.com/blog/wp-content/uploads/2015/03/step12.png)
 
-Repeat the same steps for tasks "Handle Dispute" and "Manual Matching" and then click Activate in the top right corner and press Deploy.
+Important Notice: If event mapping is missing, create data using the order-entry app. 
+
+Repeat the same steps for tasks "Generate & Send Invoice", "Waiting for Payment" and "Handle Dispute" and then click Activate in the top right corner and press Deploy.
 
 ![Step 13](http://www.cupenya.com/blog/wp-content/uploads/2015/03/step13.png)
+
+Note: To map "Waiting for Payment" and "Handle Dispute" double-click on Payment
+![Step 17](http://www.cupenya.com/blog/wp-content/uploads/2015/03/step17.png)
 
 Open cupenya insights monitor to see your order details
 
 ![Step 14](http://www.cupenya.com/blog/wp-content/uploads/2015/03/step14.png)
 
-Open the Order List (e.g. http://bluemix-order-entry-bozhoyo-179.mybluemix.net/order-list) to take actions to Close, Manually Match or Resolve Dispute for your open invoices
+Open the Order List (e.g. `http://bluemix-order-entry-bozhoyo-179.mybluemix.net/order-list`) to take actions to Close, Manually Match or Resolve Dispute for your open invoices
 
 ![Step 16](http://www.cupenya.com/blog/wp-content/uploads/2015/03/step16.png)
 
