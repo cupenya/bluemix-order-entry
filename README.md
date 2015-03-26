@@ -17,6 +17,7 @@ Press Log in button and provide your bluemix credentials
 ![Step 1](docs/step1.png)
 
 ![Step 2](docs/step2.png)
+
 Notice: If you are signing in for the first time, you will be asked to create an alias as well.
 
 Press Deploy
