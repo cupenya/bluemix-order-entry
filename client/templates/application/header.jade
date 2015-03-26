@@ -10,7 +10,11 @@ template(name="header")
         .navbar-brand
           a(href="/")
             img(src="/images/bluemix.png")
-      p.navbar-text.navbar-title
-        | {{ title }}
-      p.navbar-text.navbar-right
-        | Signed in as <i>John</i>
+      div.navbar.navbar-title
+        ul.navbar-nav-title
+          li.title-menu-item
+            a(href="/order-entry") Create Order
+          li.title-menu-item
+            a(href="/order-list") Manage Order
+        p.navbar-text.navbar-right
+          | Signed in as <i>John</i>
