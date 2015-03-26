@@ -44,7 +44,7 @@ Select Bluemix Order to Cash - Template
 
 ![Step 8](docs/step8.png)
 
-Go to the Editor and click on the settings button
+Go to the Editor(1) and click on the settings button(2)
 
 ![Step 9](docs/step9.png)
 
@@ -83,7 +83,7 @@ Open cupenya insights monitor to see your order details
 
 Open the Order List in your deployed Bluemix application to take actions to Close, Manually Match or Resolve Dispute for your open invoices
 
-![Step 16](docs/step16.png)
+![Step 16](docs/step18.png)
 
 Switch between Bluemix application and Cupenya Insights to see orders appear and change in the monitor.
 
