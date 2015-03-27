@@ -89,3 +89,30 @@ Open the Order List in your deployed Bluemix application to take actions to Clos
 Switch between Bluemix application and Cupenya Insights to see orders appear and change in the monitor.
 
 ![Step 15](docs/step15.png)
+
+# Technical Details / Check out the Code
+
+This finishes the tutorial on how to get the app and Cupenya Insights connected on Bluemix. Please explore the documented example code to see how to instrument your own application. Below are some code examples that are referenced to the Meteor sample code to log some events. Please note that this code will only work without configuration in a Bluemix environment. If you want to test the application locally, check the ```local-settings.json``` file and overwrite it manually with the settings that your binding shows in Bluemix.
+
+To log any business event within the Meteor application on the server side, the following code is necessary:
+
+```
+# web service method
+disputeOrder: (order) ->
+  # database update
+  order._disputeOpen = true
+  Orders.update(_id: order._id, order)
+
+  # Cupenya event logging, mark the activity "disputed" as started, using the invoiceId as a primary
+  # reference and passing in the order as context data that is automatically added to Cupenya data fields
+  logInsightsEvent("disputed", "ELEMENT_BEGIN", order.invoiceId, order)
+
+# web service method
+closeDispute: (order) ->
+  # database update
+  order._disputeOpen = false
+  Orders.update(_id: order._id, order)
+  
+  # Cupenya event logging, mark the activity "disputed" as finished.
+  logInsightsEvent("disputed", "ELEMENT_END", order.invoiceId, order)
+```
