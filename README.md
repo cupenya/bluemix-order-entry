@@ -96,7 +96,7 @@ This finishes the tutorial on how to get the app and Cupenya Insights connected 
 
 To log any business event within the Meteor application on the server side, the following code is necessary:
 
-```
+```coffeescript
 # web service method
 disputeOrder: (order) ->
   # database update
