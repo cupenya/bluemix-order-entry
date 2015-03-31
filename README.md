@@ -12,7 +12,7 @@ To try it out, you need a Bluemix account and then you can deploy us with one cl
 
 Press Deploy to Blumix button: [![Deploy to Bluemix](https://bluemix.net/deploy/button.png)](https://bluemix.net/deploy?repository=https://github.com/cupenya/bluemix-order-entry.git)
 
-Notice: In case Deploy to Bluemix is failing; please [follow these steps](#deploy-the-app-from-the-command-line)
+Notice: In case Deploy to Bluemix is failing; please [follow these steps](#deploy-the-app-using-the-command-line)
 
 Press Log in button and provide your bluemix credentials
 
