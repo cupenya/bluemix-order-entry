@@ -92,7 +92,7 @@ Switch between Bluemix application and Cupenya Insights to see orders appear and
 
 ![Step 15](docs/step15.png)
 
-# Deploy the app from the command line
+# Deploy the app using the command line
 
 0. `git clone https://github.com/cupenya/bluemix-order-entry.git`
 0. `install cf client` https://github.com/cloudfoundry/cli
