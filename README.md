@@ -12,6 +12,8 @@ To try it out, you need a Bluemix account and then you can deploy us with one cl
 
 Press Deploy to Blumix button: [![Deploy to Bluemix](https://bluemix.net/deploy/button.png)](https://bluemix.net/deploy?repository=https://github.com/cupenya/bluemix-order-entry.git)
 
+Notice: In case Deploy to Bluemix is failing; please [follow these steps](#deploy-the-app-from-the-command-line)
+
 Press Log in button and provide your bluemix credentials
 
 ![Step 1](docs/step1.png)
@@ -89,6 +91,16 @@ Open the Order List in your deployed Bluemix application to take actions to Clos
 Switch between Bluemix application and Cupenya Insights to see orders appear and change in the monitor.
 
 ![Step 15](docs/step15.png)
+
+# Deploy the app from the command line
+
+0. `git clone https://github.com/cupenya/bluemix-order-entry.git`
+0. `install cf client` https://github.com/cloudfoundry/cli
+0. `cd bluemix-order-entry`
+0. `cf login -a https://api.ng.bluemix.net -u username@example.com -p mypassword`
+0. `cf create-service mongolab sandbox cpy-bluemix-demo-mongodb`
+0. `cf create-service cpy-insights free cupenya-insights`
+0. `cf push <app-name>` services are automatically binded to the app
 
 # Technical Details / Check out the Code
 
