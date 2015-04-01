@@ -12,11 +12,7 @@ This example application demonstrates how to use the Cupenya Insights API in a B
 
 ## Try It for Free in 1 Minute
 
-To try it out, you need a Bluemix account and then you can deploy us with one click, the necessary services, e.g. Cupenya Insights and a database are created on the fly.
-
-
-
-## Instructions
+To try it out, you need a Bluemix account and then you can deploy Cupenya with a few steps through the command line.
 
 ### Deploy the app using the command line
 
@@ -27,6 +23,8 @@ To try it out, you need a Bluemix account and then you can deploy us with one cl
 0. `cf create-service mongolab sandbox cpy-bluemix-demo-mongodb`
 0. `cf create-service cpy-insights free cupenya-insights`
 0. `cf push <app-name>` services are automatically binded to the app
+
+You can also create the services through the UI, just keep the names.
 
 ## Technical Details
 
