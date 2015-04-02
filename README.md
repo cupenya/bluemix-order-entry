@@ -21,7 +21,7 @@ To try it out, you need a Bluemix account and then you can deploy us with one cl
 
 ### Deploy the app using Bluemix UI
 
-Press Deploy to Blumix button: [![Deploy to Bluemix](https://bluemix.net/deploy/button.png)](https://bluemix.net/deploy?repository=https://github.com/cupenya/bluemix-order-entry.git)
+Press Deploy to Bluemix button: [![Deploy to Bluemix](https://bluemix.net/deploy/button.png)](https://bluemix.net/deploy?repository=https://github.com/cupenya/bluemix-order-entry.git)
 
 Notice: In case Deploy to Bluemix is failing; please [follow the manual setup steps](#deploy-the-app-using-the-command-line)
 
