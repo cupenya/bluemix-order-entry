@@ -58,7 +58,11 @@ Select Bluemix Order to Cash - Template
 
 ![Step 8](docs/step8.png)
 
-Go to the Editor(1) and click on the settings button(2)
+Go to the Editor(1), click on "Scenario" => "Duplicate" in the top menu bar. 
+
+This way the scenario is copied and you have a version to experiment on.
+
+In the newly created scenario (it is opened automatically) click on the settings button(2).
 
 ![Step 9](docs/step9.png)
 
